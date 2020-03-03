@@ -19,7 +19,7 @@ import { ConfigService } from './config.service';
           database: configService.get('DB_DATABASE'),
           // 这里一定要注意是dist目录，否则会报连接异常
           entities: [resolve('dist') + '/**/*.entity{.ts,.js}'],
-          synchronize: configService.isEnv('dev'),
+          synchronize: process.env.SYNC || configService.get('SYNCHRONIZE'),
           // only for mongodb
           useUnifiedTopology: true,
         } as TypeOrmModuleAsyncOptions;
