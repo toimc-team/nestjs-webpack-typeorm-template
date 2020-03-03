@@ -1,0 +1,10 @@
+server:
+  port: 3000
+
+db:
+  type: "mongodb"
+  port: 27017
+  database: "board"
+
+jwt:
+  expiresIn: 3600
