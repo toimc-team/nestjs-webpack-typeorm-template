@@ -44,7 +44,9 @@
     "eslint": "^6.7.2",
     "eslint-config-prettier": "^6.7.0",
     "eslint-plugin-import": "^2.19.1",
+    "husky": "^4.2.3",
     "jest": "^24.9.0",
+    "lint-staged": "^10.0.8",
     "prettier": "^1.18.2",
     "start-server-webpack-plugin": "^2.2.5",
     "supertest": "^4.0.2",
@@ -55,6 +57,17 @@
     "typescript": "^3.7.4",
     "webpack": "^4.42.0",
     "webpack-node-externals": "^1.7.2"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,ts}": [
+      "npm run lint",
+      "prettier --write"
+    ]
   },
   "jest": {
     "moduleFileExtensions": [
