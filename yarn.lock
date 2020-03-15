@@ -364,9 +364,9 @@
     webpack-node-externals "1.7.2"
 
 "@nestjs/common@^6.10.14":
-  version "6.11.9"
-  resolved "https://registry.npm.taobao.org/@nestjs/common/download/@nestjs/common-6.11.9.tgz#1697bed82c0772b97f2d3dd28e463dd8e905b622"
-  integrity sha1-Fpe+2CwHcrl/LT3SjkY92OkFtiI=
+  version "6.11.11"
+  resolved "https://registry.npm.taobao.org/@nestjs/common/download/@nestjs/common-6.11.11.tgz#701da2462a15cc94d55ec863ddd9f2fb0bbd7136"
+  integrity sha1-cB2iRioVzJTVXshj3dny+wu9cTY=
   dependencies:
     axios "0.19.2"
     cli-color "2.0.0"
@@ -374,9 +374,9 @@
     uuid "7.0.1"
 
 "@nestjs/core@^6.10.14":
-  version "6.11.9"
-  resolved "https://registry.npm.taobao.org/@nestjs/core/download/@nestjs/core-6.11.9.tgz#c0eb6c68bd9d4d7d3c12fc9fed1aa41574a820bb"
-  integrity sha1-wOtsaL2dTX08Evyf7RqkFXSoILs=
+  version "6.11.11"
+  resolved "https://registry.npm.taobao.org/@nestjs/core/download/@nestjs/core-6.11.11.tgz#2b97a3e9c2a853f5693ed84daf81c1ee3b2782b4"
+  integrity sha1-K5ej6cKoU/VpPthNr4HB7jsngrQ=
   dependencies:
     "@nuxtjs/opencollective" "0.2.2"
     fast-safe-stringify "2.0.7"
@@ -387,9 +387,9 @@
     uuid "7.0.1"
 
 "@nestjs/platform-express@^6.10.14":
-  version "6.11.9"
-  resolved "https://registry.npm.taobao.org/@nestjs/platform-express/download/@nestjs/platform-express-6.11.9.tgz#79053c6ed9910b4c2707c102807b50778dacf604"
-  integrity sha1-eQU8btmRC0wnB8ECgHtQd42s9gQ=
+  version "6.11.11"
+  resolved "https://registry.npm.taobao.org/@nestjs/platform-express/download/@nestjs/platform-express-6.11.11.tgz#d30ea1f39299e92e080553e893a0afac54f20c6e"
+  integrity sha1-0w6h85KZ6S4IBVPok6CvrFTyDG4=
   dependencies:
     body-parser "1.19.0"
     cors "2.8.5"
@@ -415,11 +415,11 @@
     tslib "1.11.1"
 
 "@nestjs/typeorm@^6.3.3":
-  version "6.3.3"
-  resolved "https://registry.npm.taobao.org/@nestjs/typeorm/download/@nestjs/typeorm-6.3.3.tgz#a096d0fe7412eacea7a99d7c46f17ff7f11b0b47"
-  integrity sha1-oJbQ/nQS6s6nqZ18RvF/9/EbC0c=
+  version "6.3.4"
+  resolved "https://registry.npm.taobao.org/@nestjs/typeorm/download/@nestjs/typeorm-6.3.4.tgz#d73ee782080500f7d314ec5131fe9cb32817d2a4"
+  integrity sha1-1z7ngggFAPfTFOxRMf6csygX0qQ=
   dependencies:
-    uuid "3.4.0"
+    uuid "^7.0.2"
 
 "@nuxtjs/opencollective@0.2.2":
   version "0.2.2"
@@ -4678,7 +4678,7 @@ minimatch@^3.0.3, minimatch@^3.0.4:
 
 minimist@0.0.8:
   version "0.0.8"
-  resolved "https://registry.npm.taobao.org/minimist/download/minimist-0.0.8.tgz#857fcabfc3397d2625b8228262e86aa7a011b05d"
+  resolved "https://registry.npm.taobao.org/minimist/download/minimist-0.0.8.tgz?cache=0&sync_timestamp=1584051509720&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fminimist%2Fdownload%2Fminimist-0.0.8.tgz#857fcabfc3397d2625b8228262e86aa7a011b05d"
   integrity sha1-hX/Kv8M5fSYluCKCYuhqp6ARsF0=
 
 minimist@1.2.0, minimist@^1.1.1, minimist@^1.2.0:
@@ -6983,15 +6983,20 @@ utils-merge@1.0.1:
   resolved "https://registry.npm.taobao.org/utils-merge/download/utils-merge-1.0.1.tgz#9f95710f50a267947b2ccc124741c1028427e713"
   integrity sha1-n5VxD1CiZ5R7LMwSR0HBAoQn5xM=
 
-uuid@3.4.0, uuid@^3.3.2:
+uuid@7.0.1:
+  version "7.0.1"
+  resolved "https://registry.npm.taobao.org/uuid/download/uuid-7.0.1.tgz?cache=0&sync_timestamp=1583326207173&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fuuid%2Fdownload%2Fuuid-7.0.1.tgz#95ed6ff3d8c881cbf85f0f05cc3915ef994818ef"
+  integrity sha1-le1v89jIgcv4Xw8FzDkV75lIGO8=
+
+uuid@^3.3.2:
   version "3.4.0"
   resolved "https://registry.npm.taobao.org/uuid/download/uuid-3.4.0.tgz?cache=0&sync_timestamp=1583181106202&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fuuid%2Fdownload%2Fuuid-3.4.0.tgz#b23e4358afa8a202fe7a100af1f5f883f02007ee"
   integrity sha1-sj5DWK+oogL+ehAK8fX4g/AgB+4=
 
-uuid@7.0.1:
-  version "7.0.1"
-  resolved "https://registry.npm.taobao.org/uuid/download/uuid-7.0.1.tgz?cache=0&sync_timestamp=1583181106202&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fuuid%2Fdownload%2Fuuid-7.0.1.tgz#95ed6ff3d8c881cbf85f0f05cc3915ef994818ef"
-  integrity sha1-le1v89jIgcv4Xw8FzDkV75lIGO8=
+uuid@^7.0.2:
+  version "7.0.2"
+  resolved "https://registry.npm.taobao.org/uuid/download/uuid-7.0.2.tgz?cache=0&sync_timestamp=1583326207173&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fuuid%2Fdownload%2Fuuid-7.0.2.tgz#7ff5c203467e91f5e0d85cfcbaaf7d2ebbca9be6"
+  integrity sha1-f/XCA0Z+kfXg2Fz8uq99LrvKm+Y=
 
 v8-compile-cache@^2.0.3:
   version "2.1.0"
