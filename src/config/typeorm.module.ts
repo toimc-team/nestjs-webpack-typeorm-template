@@ -19,6 +19,7 @@ const dbConfig = config.get('db');
       synchronize: process.env.SYNC || dbConfig.synchronize,
       // only for mongodb
       useUnifiedTopology: true,
+      useNewUrlParser: true,
     }),
   ],
 })
