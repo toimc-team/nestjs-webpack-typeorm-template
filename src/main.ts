@@ -31,18 +31,16 @@ export async function bootstrap(): Promise<NestExpressApplication> {
     }),
   );
 
-  // app.use(compression());
-  // // https://github.com/expressjs/morgan
-  // app.use(morgan('combined'));
   app.enableVersioning();
+
+  // 注册 Swagger 的配置顺序
+  if (Config.get('swagger').enable) {
+    setupSwagger(app);
+  }
 
   const port = process.env.PORT || config.port;
   await app.listen(port);
   logger.log(`Application listening on url: http://${config.origin}:${port}`);
-
-  if (Config.get('swagger').enable) {
-    setupSwagger(app);
-  }
 
   if (module.hot) {
     module.hot.accept();

@@ -6,9 +6,6 @@ const { RunScriptWebpackPlugin } = require('run-script-webpack-plugin');
 module.exports = function (options, webpack) {
   return {
     ...options,
-    // https://github.com/nestjs/nest/issues/744
-    // https://github.com/nestjs/nest/issues/755
-    mode: 'development', // for typeORM
     entry: ['webpack/hot/poll?100', options.entry],
     module: {
       rules: [
