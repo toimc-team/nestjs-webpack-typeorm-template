@@ -2,4 +2,17 @@ server:
   origin: https://yourdomain.com
 
 db:
+  host: "test.bontor.cn"
+  port: 40120
+  database: "toimcdb"
+  username: "toimc"
+  password: "Ok8sJ7xMsoj63i38dD"
   synchronize: false
+
+jwt:
+  secret: "topSecret51"
+
+redis:
+  host: "dev.toimc.com"
+  port: 40106
+  password: "5GZePvU83II4nehR"

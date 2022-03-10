@@ -1,8 +1,5 @@
-import {
-  ExecutionContext,
-  Injectable,
-  UnauthorizedException,
-} from '@nestjs/common';
+import type { ExecutionContext } from '@nestjs/common';
+import { Injectable, UnauthorizedException } from '@nestjs/common';
 import { AuthGuard } from '@nestjs/passport';
 
 @Injectable()
@@ -13,7 +10,7 @@ export class JwtAuthGuard extends AuthGuard('jwt') {
     return super.canActivate(context);
   }
 
-  /* @ts-ignore: implicit-any */
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   handleRequest(err, user, info) {
     if (err || !user) {
       throw err || new UnauthorizedException();

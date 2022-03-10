@@ -1,7 +1,8 @@
-import { RequestHandler } from 'express';
+import type { RequestHandler } from 'express';
 import { parse } from 'url';
 
 export const loggerMiddleware: RequestHandler = (request, response, next) => {
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const { headers, method, query, params } = request;
   const date = new Date().toJSON();
   const time = date.replace('T', ' ').slice(0, -5);
