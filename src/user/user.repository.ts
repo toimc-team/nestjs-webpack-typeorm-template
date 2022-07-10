@@ -1,4 +1,4 @@
-import { Repository, EntityRepository } from 'typeorm';
+import { Repository } from 'typeorm';
 import { User } from '../entities/user.entity';
 import type { AuthCredentialsDto } from '@/auth/dto/auth-credentials.dto';
 import {
@@ -6,8 +6,9 @@ import {
   InternalServerErrorException,
 } from '@nestjs/common';
 import * as bcrypt from 'bcrypt';
+import { CustomRepository } from '@/config/database/typeorm-ex.decorator';
 
-@EntityRepository(User)
+@CustomRepository(User)
 export class UserRepository extends Repository<User> {
   async signUp(authCredentialsDto: AuthCredentialsDto): Promise<void> {
     const { username, password } = authCredentialsDto;
@@ -32,7 +33,11 @@ export class UserRepository extends Repository<User> {
     authCredentialsDto: AuthCredentialsDto,
   ): Promise<string> {
     const { username, password } = authCredentialsDto;
-    const user = await this.findOne({ username });
+    // const user = await this.createQueryBuilder('user')
+    //   .where({ username })
+    //   .getOne();
+
+    const user = await this.findOne({ where: { username } });
 
     if (user && (await user.validatePassword(password))) {
       return user.username;

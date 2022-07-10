@@ -6,7 +6,6 @@ import { Logger } from '@nestjs/common';
 import rateLimit from 'express-rate-limit';
 // 安全头
 import helmet from 'helmet';
-// import compression from 'compression';
 
 import * as Config from 'config';
 const config = Config.get('server');

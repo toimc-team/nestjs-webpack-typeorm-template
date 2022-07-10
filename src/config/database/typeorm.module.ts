@@ -3,17 +3,19 @@ import { Module } from '@nestjs/common';
 import { resolve } from '@/libs/utils';
 
 import { TypeOrmModule } from '@nestjs/typeorm';
+import { TypeOrmExModule } from './typeorm-ex.module';
 
 import * as config from 'config';
 import type { EntitySchema } from 'typeorm';
+import { User } from '@/entities/user.entity';
 
 const isDebug: boolean = process.env.NODE_ENV === 'development';
 // https://github.com/nestjs/nest/issues/755#issuecomment-394073763
-const entityContext = isDebug && require.context('../', true, /\.entity\.ts$/);
+const entityContext =
+  isDebug && require.context('../../', true, /\.entity\.ts$/);
 
 const dbConfig = config.get('db');
 
-// https://github.com/nestjs/nest/issues/744#issuecomment-394479135
 const entities = isDebug
   ? [
       ...(entityContext.keys().map((id) => {
@@ -26,6 +28,7 @@ const entities = isDebug
     ]
   : // 这里一定要注意是dist目录，否则会报连接异常
     [resolve('dist') + '/**/*.entity{.ts,.js}'];
+
 @Module({
   imports: [
     TypeOrmModule.forRoot({
@@ -37,7 +40,6 @@ const entities = isDebug
       database: dbConfig.database,
       entities,
       synchronize: process.env.SYNC || dbConfig.synchronize,
-      keepConnectionAlive: true,
       ...(dbConfig.type === 'mongodb'
         ? {
             // only for mongodb
@@ -46,6 +48,7 @@ const entities = isDebug
           }
         : {}),
     }),
+    TypeOrmExModule.forCustomRepository([User]),
   ],
 })
 export class TypeormModule {}

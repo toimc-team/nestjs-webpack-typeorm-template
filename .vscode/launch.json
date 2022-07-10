@@ -13,7 +13,7 @@
       ],
       "console": "integratedTerminal",
       "runtimeExecutable": "npm",
-      "runtimeVersion": "14.18.3",
+      "runtimeVersion": "14.19.2",
       "skipFiles": [
         "<node_internals>/**"
       ],

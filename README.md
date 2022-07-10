@@ -15,7 +15,7 @@ $ npm run start
 # watch mode
 $ npm run start:dev
 
-# hot mode -> 但是注意webpack有一些支持不好的地方，比如GraphQL https://docs.nestjs.cn/6/recipes?id=%e7%83%ad%e9%87%8d%e8%bd%bd%ef%bc%88webpack%ef%bc%89
+# hot mode -> 但是注意webpack有一些支持不好的地方，比如GraphQL https://docs.nestjs.cn/8/recipes?id=%e7%83%ad%e9%87%8d%e8%bd%bd
 $ npm run start:hot
 
 # production mode

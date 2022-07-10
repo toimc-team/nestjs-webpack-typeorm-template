@@ -1,5 +1,5 @@
 import { Module } from '@nestjs/common';
-import { TypeormModule } from '@/config/typeorm.module';
+import { TypeormModule } from '@/config/database/typeorm.module';
 import { AuthModule } from '@/auth/auth.module';
 
 // redis
