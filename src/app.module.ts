@@ -8,6 +8,7 @@ import { redisConfig } from './config/redis.config';
 
 import { AppService } from './app.service';
 import { AppController } from './app.controller';
+
 @Module({
   controllers: [AppController],
   imports: [TypeormModule, RedisModule.forRoot(redisConfig), AuthModule],

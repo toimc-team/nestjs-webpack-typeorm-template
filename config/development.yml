@@ -1,6 +1,6 @@
 db:
-  host: "test.bontor.cn"
-  port: 40120
+  host: "hw.prod.toimc.com"
+  port: 11000
   database: "toimcdb"
   username: "toimc"
   password: "Ok8sJ7xMsoj63i38dD"
@@ -10,6 +10,6 @@ jwt:
   secret: "topSecret51"
 
 redis:
-  host: "dev.toimc.com"
-  port: 40106
-  password: "5GZePvU83II4nehR"
+  host: "hw.prod.toimc.com"
+  port: 43006
+  password: "n85Arxyl75Uiwv1jXmiL5opOmgvznJX9"
