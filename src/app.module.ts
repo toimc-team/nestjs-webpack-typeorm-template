@@ -1,6 +1,6 @@
 import { Module } from '@nestjs/common';
-import { TypeormModule } from '@/config/database/typeorm.module';
-import { AuthModule } from '@/auth/auth.module';
+import { TypeormModule } from 'src/config/database/typeorm.module';
+import { AuthModule } from 'src/auth/auth.module';
 
 // redis
 import { RedisModule } from '@liaoliaots/nestjs-redis';

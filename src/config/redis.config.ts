@@ -1,5 +1,6 @@
 import type { RedisModuleOptions } from '@liaoliaots/nestjs-redis';
 import { DEFAULT_REDIS_NAMESPACE } from '@liaoliaots/nestjs-redis';
+
 import * as config from 'config';
 import { Logger } from '@nestjs/common';
 

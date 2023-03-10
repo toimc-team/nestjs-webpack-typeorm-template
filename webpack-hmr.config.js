@@ -78,6 +78,10 @@ module.exports = function (options, webpack) {
           configFile: tsConfigFile,
         }),
       ],
+      alias: {
+        '@': path.resolve(__dirname, '.'),
+        src: path.resolve(__dirname, 'src/'),
+      },
     },
     plugins: [
       ...options.plugins,

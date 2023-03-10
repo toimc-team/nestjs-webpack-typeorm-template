@@ -1,15 +1,15 @@
 db:
-  host: "hw.prod.toimc.com"
-  port: 11000
-  database: "toimcdb"
-  username: "toimc"
-  password: "Ok8sJ7xMsoj63i38dD"
+  host: "localhost"
+  port: 3306
+  database: "testdb"
+  username: "root"
+  password: "example"
   synchronize: true
 
 jwt:
   secret: "topSecret51"
 
 redis:
-  host: "hw.prod.toimc.com"
-  port: 43006
-  password: "n85Arxyl75Uiwv1jXmiL5opOmgvznJX9"
+  host: "localhost"
+  port: 6379
+  # password: "random-pass"
