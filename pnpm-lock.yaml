@@ -11,7 +11,7 @@ specifiers:
   '@nestjs/jwt': ^10.0.2
   '@nestjs/passport': ^9.0.3
   '@nestjs/platform-express': ^9.3.9
-  '@nestjs/schematics': ^9.0.4
+  '@nestjs/schematics': ^10.0.0
   '@nestjs/swagger': ^6.2.1
   '@nestjs/terminus': ^9.2.1
   '@nestjs/testing': ^9.3.9
@@ -100,7 +100,7 @@ devDependencies:
   '@commitlint/cli': 17.6.6
   '@commitlint/config-conventional': 17.6.6
   '@nestjs/cli': 10.0.5
-  '@nestjs/schematics': 9.2.0_typescript@4.9.5
+  '@nestjs/schematics': 10.0.1_typescript@4.9.5
   '@nestjs/testing': 9.4.3_7pq4cfiue2gcndcx2hxtpuos2y
   '@types/express': 4.17.17
   '@types/ioredis': 4.28.10
@@ -146,8 +146,8 @@ packages:
       '@jridgewell/trace-mapping': 0.3.18
     dev: true
 
-  /@angular-devkit/core/16.0.1:
-    resolution: {integrity: sha512-2uz98IqkKJlgnHbWQ7VeL4pb+snGAZXIama2KXi+k9GsRntdcw+udX8rL3G9SdUGUF+m6+147Y1oRBMHsO/v4w==}
+  /@angular-devkit/core/16.1.0:
+    resolution: {integrity: sha512-mrWpuDvttmhrCGcLc68RIXKtTzUhkBTsE5ZZFZNO1+FSC+vO/ZpyCpPd6C+6coM68NfXYjHlms5XF6KbxeGn/Q==}
     engines: {node: ^16.14.0 || >=18.10.0, npm: ^6.11.0 || ^7.5.6 || >=8.0.0, yarn: '>= 1.13.0'}
     peerDependencies:
       chokidar: ^3.5.2
@@ -194,11 +194,11 @@ packages:
       - chokidar
     dev: true
 
-  /@angular-devkit/schematics/16.0.1:
-    resolution: {integrity: sha512-A9D0LTYmiqiBa90GKcSuWb7hUouGIbm/AHbJbjL85WLLRbQA2PwKl7P5Mpd6nS/ZC0kfG4VQY3VOaDvb3qpI9g==}
+  /@angular-devkit/schematics/16.1.0:
+    resolution: {integrity: sha512-LM35PH9DT3eQRSZgrkk2bx1ZQjjVh8BCByTlr37/c+FnF9mNbeBsa1YkxrlsN/CwO+045OwEwRHnkM9Zcx0U/A==}
     engines: {node: ^16.14.0 || >=18.10.0, npm: ^6.11.0 || ^7.5.6 || >=8.0.0, yarn: '>= 1.13.0'}
     dependencies:
-      '@angular-devkit/core': 16.0.1
+      '@angular-devkit/core': 16.1.0
       jsonc-parser: 3.2.0
       magic-string: 0.30.0
       ora: 5.4.1
@@ -1301,13 +1301,14 @@ packages:
       - chokidar
     dev: true
 
-  /@nestjs/schematics/9.2.0_typescript@4.9.5:
-    resolution: {integrity: sha512-wHpNJDPzM6XtZUOB3gW0J6mkFCSJilzCM3XrHI1o0C8vZmFE1snbmkIXNyoi1eV0Nxh1BMymcgz5vIMJgQtTqw==}
+  /@nestjs/schematics/10.0.1_typescript@4.9.5:
+    resolution: {integrity: sha512-buxpYtSwOmWyf0nUJWJCkCkYITwbOfIEKHTnGS7sDbcfaajrOFXb5pPAGD2E1CUb3C1+NkQIURPKzs0IouZTQg==}
     peerDependencies:
-      typescript: '>=4.3.5'
+      typescript: '>=4.8.2'
     dependencies:
-      '@angular-devkit/core': 16.0.1
-      '@angular-devkit/schematics': 16.0.1
+      '@angular-devkit/core': 16.1.0
+      '@angular-devkit/schematics': 16.1.0
+      comment-json: 4.2.3
       jsonc-parser: 3.2.0
       pluralize: 8.0.0
       typescript: 4.9.5
