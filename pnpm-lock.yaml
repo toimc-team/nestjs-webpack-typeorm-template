@@ -9,7 +9,7 @@ specifiers:
   '@nestjs/config': ^2.3.1
   '@nestjs/core': ^9.3.9
   '@nestjs/jwt': ^10.0.2
-  '@nestjs/passport': ^9.0.3
+  '@nestjs/passport': ^10.0.0
   '@nestjs/platform-express': ^9.3.9
   '@nestjs/schematics': ^9.0.4
   '@nestjs/swagger': ^6.2.1
@@ -73,7 +73,7 @@ dependencies:
   '@nestjs/config': 2.3.4_ohggjv67dflkcvfmklbvieagia
   '@nestjs/core': 9.4.3_e3see3pbddx6ql6aipv3ullslq
   '@nestjs/jwt': 10.1.0_@nestjs+common@10.0.3
-  '@nestjs/passport': 9.0.3_pywtletninsj67losigahzgyme
+  '@nestjs/passport': 10.0.0_pywtletninsj67losigahzgyme
   '@nestjs/platform-express': 9.4.3_zrje4jogn7fyhnwaoghosliir4
   '@nestjs/swagger': 6.3.0_6itd33ni2syilpv5n7xdzvbet4
   '@nestjs/terminus': 9.2.2_y5lewr3hpm33bundzpkuyatl7q
@@ -1260,10 +1260,10 @@ packages:
       reflect-metadata: 0.1.13
     dev: false
 
-  /@nestjs/passport/9.0.3_pywtletninsj67losigahzgyme:
-    resolution: {integrity: sha512-HplSJaimEAz1IOZEu+pdJHHJhQyBOPAYWXYHfAPQvRqWtw4FJF1VXl1Qtk9dcXQX1eKytDtH+qBzNQc19GWNEg==}
+  /@nestjs/passport/10.0.0_pywtletninsj67losigahzgyme:
+    resolution: {integrity: sha512-IlKKc6M7JOe+4dBbW6gZsXBSD05ZYgwfGf3GJhgCmUGYVqffpDdALQSS6JftnExrE+12rACoEmHkzYwKAGVK0Q==}
     peerDependencies:
-      '@nestjs/common': ^8.0.0 || ^9.0.0
+      '@nestjs/common': ^8.0.0 || ^9.0.0 || ^10.0.0
       passport: ^0.4.0 || ^0.5.0 || ^0.6.0
     dependencies:
       '@nestjs/common': 10.0.3_j3td4gnlgk75ora6o6suo62byy
