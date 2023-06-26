@@ -1,0 +1,14 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    ":labels(dependencies,devops)",
+    ":maintainLockFilesWeekly",
+    ":enableVulnerabilityAlerts",
+    ":automergeLinters",
+    ":automergeTypes",
+    ":automergeMinor"
+  ],
+  "baseBranches": [
+    "master"
+  ]
+}
