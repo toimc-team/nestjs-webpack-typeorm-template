@@ -34,7 +34,7 @@
     "@nestjs/jwt": "^10.0.2",
     "@nestjs/passport": "^9.0.3",
     "@nestjs/platform-express": "^9.3.9",
-    "@nestjs/swagger": "^6.2.1",
+    "@nestjs/swagger": "^7.0.0",
     "@nestjs/terminus": "^9.2.1",
     "@nestjs/typeorm": "9.0.1",
     "bcrypt": "^5.1.0",
