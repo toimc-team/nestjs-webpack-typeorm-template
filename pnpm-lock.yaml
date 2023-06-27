@@ -15,7 +15,7 @@ specifiers:
   '@nestjs/swagger': ^6.2.1
   '@nestjs/terminus': ^9.2.1
   '@nestjs/testing': ^9.3.9
-  '@nestjs/typeorm': 9.0.1
+  '@nestjs/typeorm': 10.0.0
   '@types/express': ^4.17.17
   '@types/ioredis': ^4.28.10
   '@types/jest': 29.5.2
@@ -76,8 +76,8 @@ dependencies:
   '@nestjs/passport': 9.0.3_pywtletninsj67losigahzgyme
   '@nestjs/platform-express': 9.4.3_zrje4jogn7fyhnwaoghosliir4
   '@nestjs/swagger': 6.3.0_6itd33ni2syilpv5n7xdzvbet4
-  '@nestjs/terminus': 9.2.2_y5lewr3hpm33bundzpkuyatl7q
-  '@nestjs/typeorm': 9.0.1_e72s5w7rjilp7f2o5zjxaepscy
+  '@nestjs/terminus': 9.2.2_6awzkl6ykwztsc6fcrcyovh4du
+  '@nestjs/typeorm': 10.0.0_e72s5w7rjilp7f2o5zjxaepscy
   bcrypt: 5.1.0
   class-transformer: 0.5.1
   class-validator: 0.14.0
@@ -1344,7 +1344,7 @@ packages:
       swagger-ui-dist: 4.18.2
     dev: false
 
-  /@nestjs/terminus/9.2.2_y5lewr3hpm33bundzpkuyatl7q:
+  /@nestjs/terminus/9.2.2_6awzkl6ykwztsc6fcrcyovh4du:
     resolution: {integrity: sha512-AWUA8XLcgxWUjUFYHDqi42M7CZn2e+DEWxP+MqNAbMzz4ybB5jGcFK5Fy8qwaNBoWg6KMF1JiXOOygGXgk9ydg==}
     peerDependencies:
       '@grpc/grpc-js': '*'
@@ -1391,7 +1391,7 @@ packages:
     dependencies:
       '@nestjs/common': 10.0.3_j3td4gnlgk75ora6o6suo62byy
       '@nestjs/core': 9.4.3_e3see3pbddx6ql6aipv3ullslq
-      '@nestjs/typeorm': 9.0.1_e72s5w7rjilp7f2o5zjxaepscy
+      '@nestjs/typeorm': 10.0.0_e72s5w7rjilp7f2o5zjxaepscy
       boxen: 5.1.2
       check-disk-space: 3.3.1
       reflect-metadata: 0.1.13
@@ -1418,11 +1418,11 @@ packages:
       tslib: 2.5.3
     dev: true
 
-  /@nestjs/typeorm/9.0.1_e72s5w7rjilp7f2o5zjxaepscy:
-    resolution: {integrity: sha512-A2BgLIPsMtmMI0bPKEf4bmzgFPsnvHqNBx3KkvaJ7hJrBQy0OqYOb+Rr06ifblKWDWS2tUPNrAFQbZjtk3PI+g==}
+  /@nestjs/typeorm/10.0.0_e72s5w7rjilp7f2o5zjxaepscy:
+    resolution: {integrity: sha512-WQU4HCDTz4UavsFzvGUKDHqi0MO5K47yFoPXdmh+Z/hCNO7SHCMmV9jLiLukM8n5nKUqJ3jDqiljkWBcZPdCtA==}
     peerDependencies:
-      '@nestjs/common': ^8.0.0 || ^9.0.0
-      '@nestjs/core': ^8.0.0 || ^9.0.0
+      '@nestjs/common': ^8.0.0 || ^9.0.0 || ^10.0.0
+      '@nestjs/core': ^8.0.0 || ^9.0.0 || ^10.0.0
       reflect-metadata: ^0.1.13
       rxjs: ^7.2.0
       typeorm: ^0.3.0
@@ -1432,7 +1432,7 @@ packages:
       reflect-metadata: 0.1.13
       rxjs: 7.8.1
       typeorm: 0.3.17_lwavcbpfip4ksx7ezwtv75llta
-      uuid: 8.3.2
+      uuid: 9.0.0
     dev: false
 
   /@nodelib/fs.scandir/2.1.5:
@@ -7499,11 +7499,6 @@ packages:
   /utils-merge/1.0.1:
     resolution: {integrity: sha512-pMZTvIkT1d+TFGvDOqodOclx0QWkkgi6Tdoa8gC8ffGAAqz9pzPTZWAybbsHHoED/ztMtkv/VoYTYyShUn81hA==}
     engines: {node: '>= 0.4.0'}
-
-  /uuid/8.3.2:
-    resolution: {integrity: sha512-+NYs2QeMWy+GWFOEm9xnn6HCDp0l7QBD7ml8zLUmJ+93Q5NF0NocErnwkTkXVFNiX3/fpC6afS8Dhb/gz7R7eg==}
-    hasBin: true
-    dev: false
 
   /uuid/9.0.0:
     resolution: {integrity: sha512-MXcSTerfPa4uqyzStbRoTgt5XIe3x5+42+q1sDuy3R5MDk66URdLMOZe5aPX/SQd+kuYAh0FdP/pO28IkQyTeg==}
