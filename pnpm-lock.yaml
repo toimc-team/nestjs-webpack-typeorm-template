@@ -6,7 +6,7 @@ specifiers:
   '@liaoliaots/nestjs-redis': ^9.0.5
   '@nestjs/cli': ^10.0.0
   '@nestjs/common': ^10.0.0
-  '@nestjs/config': ^2.3.1
+  '@nestjs/config': ^3.0.0
   '@nestjs/core': ^9.3.9
   '@nestjs/jwt': ^10.0.2
   '@nestjs/passport': ^9.0.3
@@ -70,7 +70,7 @@ specifiers:
 dependencies:
   '@liaoliaots/nestjs-redis': 9.0.5_564lqyoqo7xlksogi72uxsc45a
   '@nestjs/common': 10.0.3_j3td4gnlgk75ora6o6suo62byy
-  '@nestjs/config': 2.3.4_ohggjv67dflkcvfmklbvieagia
+  '@nestjs/config': 3.0.0_ut2lz3i2emxvmaagk3nrd4vcuy
   '@nestjs/core': 9.4.3_e3see3pbddx6ql6aipv3ullslq
   '@nestjs/jwt': 10.1.0_@nestjs+common@10.0.3
   '@nestjs/passport': 9.0.3_pywtletninsj67losigahzgyme
@@ -1184,19 +1184,17 @@ packages:
       tslib: 2.5.3
       uid: 2.0.2
 
-  /@nestjs/config/2.3.4_ohggjv67dflkcvfmklbvieagia:
-    resolution: {integrity: sha512-IGdSF+0F9MJO6dCRTEahdxPz4iVijjtolcFBxnY+2QYM3bXYQvAgzskGZi+WkAFJN/VzR3TEp60gN5sI74GxPA==}
+  /@nestjs/config/3.0.0_ut2lz3i2emxvmaagk3nrd4vcuy:
+    resolution: {integrity: sha512-fzASk1Uv6AjdE6uA1na8zpqRCXAhRpcfgpCVv3SAKlgJ3VR3bEjcI4G17WHLgLBsmPzI1ofdkSI451WLD1F1Rw==}
     peerDependencies:
-      '@nestjs/common': ^7.0.0 || ^8.0.0 || ^9.0.0
+      '@nestjs/common': ^8.0.0 || ^9.0.0 || ^10.0.0
       reflect-metadata: ^0.1.13
-      rxjs: ^6.0.0 || ^7.2.0
     dependencies:
       '@nestjs/common': 10.0.3_j3td4gnlgk75ora6o6suo62byy
       dotenv: 16.1.4
       dotenv-expand: 10.0.0
       lodash: 4.17.21
       reflect-metadata: 0.1.13
-      rxjs: 7.8.1
       uuid: 9.0.0
     dev: false
 
