@@ -7,7 +7,7 @@ import rateLimit from 'express-rate-limit';
 // 安全头
 import helmet from 'helmet';
 
-import { SwaggerTypes, ServerType} from 'src/types.d'
+import type { SwaggerTypes, ServerType } from 'src/types.d';
 import * as Config from 'config';
 
 import type { NestExpressApplication } from '@nestjs/platform-express';

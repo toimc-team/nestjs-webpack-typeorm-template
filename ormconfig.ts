@@ -2,7 +2,7 @@ import type { TypeOrmModuleOptions } from '@nestjs/typeorm';
 
 import type { DataSourceOptions } from 'typeorm';
 import { DataSource } from 'typeorm';
-import { DBTypes } from 'src/types.d'
+import type { DBTypes } from 'src/types.d';
 
 import * as config from 'config';
 

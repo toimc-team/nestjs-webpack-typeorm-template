@@ -7,7 +7,7 @@ import { JwtModule } from '@nestjs/jwt';
 import { PassportModule } from '@nestjs/passport';
 import { JwtStragegy } from './jwt.strategy';
 import * as config from 'config';
-import { JWTTypes } from '../types';
+import type { JWTTypes } from '../types';
 
 const jwtConfig = config.get('jwt') as JWTTypes;
 @Module({
