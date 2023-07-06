@@ -44,7 +44,7 @@
     "dotenv": "^16.0.3",
     "express-rate-limit": "^6.7.0",
     "fast-glob": "^3.2.12",
-    "helmet": "^6.0.1",
+    "helmet": "^7.0.0",
     "mongodb": "^3.7.3",
     "mysql2": "^3.2.0",
     "passport": "^0.6.0",
