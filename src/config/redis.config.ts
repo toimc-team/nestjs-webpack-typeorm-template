@@ -3,8 +3,9 @@ import { DEFAULT_REDIS_NAMESPACE } from '@liaoliaots/nestjs-redis';
 
 import * as config from 'config';
 import { Logger } from '@nestjs/common';
+import { RedisTypes } from '../types';
 
-const rsConfig = config.get('redis');
+const rsConfig = config.get('redis') as RedisTypes;
 const logger = new Logger('redis');
 
 export const redisConfig: RedisModuleOptions = {

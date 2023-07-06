@@ -7,12 +7,14 @@ import rateLimit from 'express-rate-limit';
 // 安全头
 import helmet from 'helmet';
 
+import { SwaggerTypes, ServerType} from 'src/types.d'
 import * as Config from 'config';
-const config = Config.get('server');
 
 import type { NestExpressApplication } from '@nestjs/platform-express';
 import { ExpressAdapter } from '@nestjs/platform-express';
 import { setupSwagger } from './swagger/index';
+
+const config = Config.get('server') as ServerType;
 
 export async function bootstrap(): Promise<NestExpressApplication> {
   const logger = new Logger('bootstrap');
@@ -33,7 +35,7 @@ export async function bootstrap(): Promise<NestExpressApplication> {
   app.enableVersioning();
 
   // 注册 Swagger 的配置顺序
-  if (Config.get('swagger').enable) {
+  if ((Config.get('swagger') as SwaggerTypes).enable) {
     setupSwagger(app);
   }
 

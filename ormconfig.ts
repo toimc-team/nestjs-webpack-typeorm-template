@@ -2,10 +2,11 @@ import type { TypeOrmModuleOptions } from '@nestjs/typeorm';
 
 import type { DataSourceOptions } from 'typeorm';
 import { DataSource } from 'typeorm';
+import { DBTypes } from 'src/types.d'
 
 import * as config from 'config';
 
-const dbConfig = config.get('db');
+const dbConfig = config.get('db') as DBTypes;
 
 // 通过dotENV来解析不同的配置
 export function buildConnectionOptions() {

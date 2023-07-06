@@ -1,7 +1,7 @@
 import {
   BaseEntity,
   Entity,
-  ObjectID,
+  ObjectId as ObjectID,
   ObjectIdColumn,
   Column,
   Unique,
