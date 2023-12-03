@@ -81,8 +81,8 @@ dependencies:
     specifier: ^7.8.1
     version: 7.8.1
   swagger-ui-express:
-    specifier: ^4.6.3
-    version: 4.6.3(express@4.18.2)
+    specifier: ^5.0.0
+    version: 5.0.0(express@4.18.2)
   typeorm:
     specifier: ^0.3.17
     version: 0.3.17(ioredis@5.3.2)(mongodb@5.6.0)(mysql2@3.5.0)(ts-node@10.9.1)
@@ -7787,8 +7787,8 @@ packages:
     resolution: {integrity: sha512-c1KmAjuVODxw+vwkNLALQZrgdlBAuBbr2xSPfYrJgseEi7gFKcTvShysPmyuDI4kcUa1+5rFpjWvXdusKY74mg==}
     dev: false
 
-  /swagger-ui-express@4.6.3(express@4.18.2):
-    resolution: {integrity: sha512-CDje4PndhTD2HkgyKH3pab+LKspDeB/NhPN2OF1j+piYIamQqBYwAXWESOT1Yju2xFg51bRW9sUng2WxDjzArw==}
+  /swagger-ui-express@5.0.0(express@4.18.2):
+    resolution: {integrity: sha512-tsU9tODVvhyfkNSvf03E6FAk+z+5cU3lXAzMy6Pv4av2Gt2xA0++fogwC4qo19XuFf6hdxevPuVCSKFuMHJhFA==}
     engines: {node: '>= v0.10.32'}
     peerDependencies:
       express: '>=4.0.0 || >=5.0.0-beta'
