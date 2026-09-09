@@ -72,7 +72,7 @@
     "@types/passport-jwt": "^3.0.8",
     "@types/supertest": "^2.0.12",
     "@types/webpack-env": "^1.18.1",
-    "@typescript-eslint/eslint-plugin": "^5.61.0",
+    "@typescript-eslint/eslint-plugin": "^8.0.0",
     "@typescript-eslint/parser": "^5.61.0",
     "clean-webpack-plugin": "^4.0.0",
     "commitizen": "^4.3.0",
